@@ -31,6 +31,24 @@ $(document).ready(function () {
             $("#errorNama").text("Nama minimal 3 karakter!");
             $("#nama").addClass("error");
         }
+        else if (
+            nama.indexOf("0") != -1 ||
+            nama.indexOf("1") != -1 ||
+            nama.indexOf("2") != -1 ||
+            nama.indexOf("3") != -1 ||
+            nama.indexOf("4") != -1 ||
+            nama.indexOf("5") != -1 ||
+            nama.indexOf("6") != -1 ||
+            nama.indexOf("7") != -1 ||
+            nama.indexOf("8") != -1 ||
+            nama.indexOf("9") != -1
+        ) {
+            $("#errorNama").text(
+                "Nama tidak boleh mengandung angka!"
+            );
+
+            $("#nama").addClass("error");
+        }
     });
 
     $("#email").blur(function () {
@@ -122,6 +140,25 @@ $(document).ready(function () {
         }
         else if (nama.length < 3) {
             $("#errorNama").text("Nama minimal 3 karakter!");
+            $("#nama").addClass("error");
+            valid = false;
+        }
+        else if (
+            nama.indexOf("0") != -1 ||
+            nama.indexOf("1") != -1 ||
+            nama.indexOf("2") != -1 ||
+            nama.indexOf("3") != -1 ||
+            nama.indexOf("4") != -1 ||
+            nama.indexOf("5") != -1 ||
+            nama.indexOf("6") != -1 ||
+            nama.indexOf("7") != -1 ||
+            nama.indexOf("8") != -1 ||
+            nama.indexOf("9") != -1
+        ) {
+            $("#errorNama").text(
+                "Nama tidak boleh mengandung angka!"
+            );
+
             $("#nama").addClass("error");
             valid = false;
         }
