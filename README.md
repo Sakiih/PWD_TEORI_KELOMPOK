@@ -179,4 +179,4 @@ Jika belum memilih sesi:
 Silakan pilih sesi workshop!
 ```
 
-Input sesi juga
+Input sesi juga.
