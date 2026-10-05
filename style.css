@@ -15,109 +15,8 @@ body {
     min-height: 100vh;
 }
 
-.sidebar {
-    width: 240px;
-    background: white;
-    border-right: 1px solid #e5e7eb;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 22px 18px;
-    border-bottom: 1px solid #eeeeee;
-}
-
-.logo-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background: #eaf2ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-area h2 {
-    font-size: 15px;
-}
-
-.logo-area span {
-    font-size: 10px;
-    color: #888;
-}
-
-.menu {
-    padding: 18px 12px;
-}
-
-.menu p {
-    font-size: 10px;
-    color: #999;
-    margin: 15px 8px 8px;
-}
-
-.menu-item {
-    display: block;
-    text-decoration: none;
-    color: #374151;
-    padding: 11px;
-    border-radius: 8px;
-    font-size: 13px;
-    margin-bottom: 4px;
-}
-
-.menu-item:hover {
-    background: #f5f6f8;
-}
-
-.menu-item.active {
-    background: #eef4ff;
-    color: #1769ff;
-    font-weight: bold;
-}
-
-.user {
-    margin-top: auto;
-    border-top: 1px solid #eeeeee;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.user-avatar {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #e8f7ef;
-    color: #159447;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-.user strong {
-    display: block;
-    font-size: 12px;
-}
-
-.user small {
-    font-size: 10px;
-    color: #999;
-}
-
 .main {
-    margin-left: 240px;
-    width: calc(100% - 240px);
+    width: 100%;
 }
 
 .header {
@@ -125,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0 25px;
+    padding: 0 30px;
     background: white;
     border-bottom: 1px solid #eeeeee;
     font-size: 13px;
@@ -439,15 +338,6 @@ body {
 }
 
 @media (max-width: 850px) {
-    .sidebar {
-        width: 200px;
-    }
-
-    .main {
-        margin-left: 200px;
-        width: calc(100% - 200px);
-    }
-
     .grid {
         grid-template-columns: 1fr;
     }
@@ -458,15 +348,6 @@ body {
 }
 
 @media (max-width: 600px) {
-    .sidebar {
-        display: none;
-    }
-
-    .main {
-        margin-left: 0;
-        width: 100%;
-    }
-
     .content {
         padding: 18px;
     }

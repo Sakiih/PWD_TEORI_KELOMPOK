@@ -47,6 +47,7 @@ $(document).ready(function () {
             $("#errorEmail").text(
                 "Email harus memiliki @ dan titik!"
             );
+
             $("#email").addClass("error");
         }
     });
@@ -64,6 +65,7 @@ $(document).ready(function () {
                 $("#errorNohp").text(
                     "Nomor HP harus diawali 08, 62, atau +62!"
                 );
+
                 $("#nohp").addClass("error");
             }
             else if (nohp.indexOf("+62") == 0) {
@@ -72,6 +74,7 @@ $(document).ready(function () {
                     $("#errorNohp").text(
                         "Nomor HP hanya boleh berisi angka!"
                     );
+
                     $("#nohp").addClass("error");
                 }
 
@@ -82,6 +85,7 @@ $(document).ready(function () {
                     $("#errorNohp").text(
                         "Nomor HP hanya boleh berisi angka!"
                     );
+
                     $("#nohp").addClass("error");
                 }
 
@@ -134,6 +138,7 @@ $(document).ready(function () {
             $("#errorEmail").text(
                 "Email harus memiliki @ dan titik!"
             );
+
             $("#email").addClass("error");
             valid = false;
         }
@@ -148,6 +153,7 @@ $(document).ready(function () {
                 $("#errorNohp").text(
                     "Nomor HP harus diawali 08, 62, atau +62!"
                 );
+
                 $("#nohp").addClass("error");
                 valid = false;
             }
@@ -157,6 +163,7 @@ $(document).ready(function () {
                     $("#errorNohp").text(
                         "Nomor HP hanya boleh berisi angka!"
                     );
+
                     $("#nohp").addClass("error");
                     valid = false;
                 }
@@ -168,6 +175,7 @@ $(document).ready(function () {
                     $("#errorNohp").text(
                         "Nomor HP hanya boleh berisi angka!"
                     );
+
                     $("#nohp").addClass("error");
                     valid = false;
                 }
@@ -179,6 +187,7 @@ $(document).ready(function () {
             $("#errorSesi").text(
                 "Silakan pilih sesi workshop!"
             );
+
             $("#sesi").addClass("error");
             valid = false;
         }
@@ -187,6 +196,7 @@ $(document).ready(function () {
             $("#errorPersetujuan").text(
                 "Kamu harus menyetujui pendaftaran!"
             );
+
             valid = false;
         }
 
